@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E commerce</title>
+    <!--internal stylesheet-->
+    <link href="style.css" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--java script and bootstrap--> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--on clicking submit removing enteries in input field and sreach_box-->
+    <script>
+        function remove(){
+            document.getElementById('inputName').value='';
+            document.getElementById('inputEmail').value='';
+            document.getElementById('inputMessage').value='';
+        }
+
+        function search(){
+            document.getElementById('search_box').value = '' ;
+        }
+    </script>
+
+</head>
+</head>
+<body>
+    <div id="header">
+        <!--header first part-->
+        <ul class="nav nav-pills" id="header_first">
+            <li class="nav-item">
+                <div id="logo">Ecommerce</div>
+            </li>
+            <li class="nav-item">
+                <div id="search">
+                    <input type="text" name="searchbox" placeholder="Product name, Category name, etc." id="search_box">
+                    <input type="button" value="Search" name="searchicon" id="search_icon" onclick="search()">
+                </div>
+            </li>
+            <li class="nav-item">
+                <div id="Login_and_Cart">
+                    <button type="button" class="btn btn-primary" id="Login" onclick="location.href='Login.html';">Login</button>
+                    <a class="nav-link" href="Cart.html" id="cart">
+                        <i class="cart fa fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <!--header second part-->
+        <div id="header_second">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html" id="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Product.html" id="page">All Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle" data-bs-toggle="dropdown" id="page">Women</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Product.html">All</a></li>
+                        <li><a class="dropdown-item" href="Product.html">Dresses</a></li>
+                        <li><a class="dropdown-item" href="Product.html">Pants</a></li>
+                        <li><a class="dropdown-item" href="Product.html">Skrits</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle" data-bs-toggle="dropdown" id="page">Men</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Product.html">All</a></li>
+                        <li><a class="dropdown-item" href="Product.html">T-Shirt</a></li>
+                        <li><a class="dropdown-item" href="Product.html">Pants</a></li>
+                        <li><a class="dropdown-item" href="Product.html">Coats</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Product.html" id="page">Kids</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html" id="page">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--contact form-->
+
+    <div class="container-fluid" style="display:flex ; flex-direction: column ; justify-content: center; background-color: rgb(200, 229, 14) ;">
+        <div style="text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 30px ; ">Contact Us</div>
+        <br>
+        <br>
+        <div class="container" style="display: flex ; flex-direction: row ; justify-content: space-around;">
+            <!--image-->
+            <div class="card" style="background-color: rgb(200, 229, 14);">
+                <img class="card-img-top" alt="contact" src="photos/cover_photo.jpg" style="width:18rem ; height:18rem ;">
+            </div>
+            <!--contact form-->
+            <form>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name" style="width: 18rem;">
+                </div>
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your Email" style="width: 18rem;">
+                </div>
+                <div class="mb-3">
+                    <label for="inputMessage" class="form-label">Message:</label>
+                    <textarea class="form-control" id="inputMessage" placeholder="Enter your Message" style="width: 18rem;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="remove()" style="width: 18rem;">Submit</button>
+                <br>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <!--footer-->
+    <div id="footer">
+        <ul class="nav nav-pills" id="footer_first">
+            <li class="nav-item">
+                <div id="category">
+                    <a href="Product.html" id="category_head">Women</a>
+                    <a href="Product.html" id="category_link">Dresses</a>
+                    <a href="Product.html" id="category_link">Pants</a>
+                    <a href="Product.html" id="category_link">Skrits</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div id="category">
+                    <a href="Product.html" id="category_head">Men</a>
+                    <a href="Product.html" id="category_link">T-Shirt</a>
+                    <a href="Product.html" id="category_link">Pants</a>
+                    <a href="Product.html" id="category_link">Coats</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div id="category">
+                    <a href="Product.html" id="category_head">Kids</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div id="category">
+                    <a href="Home.html" id="category_head">Links</a>
+                    <a href="Home.html" id="category_link">Home</a>
+                    <a href="Login.html" id="category_link">Login</a>
+                    <a href="Contact.html" id="category_link">Contact</a>
+                </div>
+            </li>
+        </ul>
+        <hr style="color:rgba(241, 234, 234, 0.897);font-size: 100px;">
+    <!--copyright-->
+        
+        <div id="copyright">
+            Copyright @Ecommerce 2023-2024
+        </div>
+
+    </div>
+</body>
+</html>

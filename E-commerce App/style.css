@@ -1,0 +1,153 @@
+/*header design*/
+#header_first{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding:20px;
+}
+#Login_and_Cart{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#header_second{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(225, 223, 223);
+}
+#logo{
+    color: rgb(200, 229, 14);
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+#logo:hover{
+    color:chartreuse;
+}
+#search_icon{
+    background-color: rgb(200, 229, 14);
+    color: black;
+    width:80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#search_icon:hover{
+    background-color:chartreuse;
+}
+#search_box{
+    width:300px;
+    border-radius:30px;
+}
+#Login{
+    background-color: rgb(200, 229, 14);
+    color: black;
+    width: 80px;
+    height:40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Login:hover{
+    background-color: chartreuse;
+}
+
+#cart{
+    color: rgb(200, 229, 14);
+    font-size: 25px;
+}
+#cart:hover{
+    color: chartreuse;
+}
+/*second part of header*/
+#page{
+    color:black;
+    text-decoration: none;
+    margin:10px;
+    text-align: center;
+
+}
+/*footer design*/
+#footer_first{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+}
+#category{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#category_head{
+    color:white;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+#category_head:hover{
+    color: chartreuse;
+}
+#category_link{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+
+}
+#category_link:hover{
+    color: chartreuse;
+}
+#footer{
+    background-color: black;
+}
+#copyright{
+    color:white;
+    text-align: center;
+}
+#copyright:hover{
+    color:chartreuse;
+}
+
+/*background image and slogan*/
+#cover_page{
+    background-image: url(photos/cover_photo.jpg) ;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size: 100%;
+}
+#logo_title{
+    color: rgb(200, 229, 14);
+    font-size: 90px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    
+}
+#logo_title:hover{
+    color:chartreuse;
+}
+#slogan{
+    color:rgb(200,229,14);
+    font-size:30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+#slogan:hover{
+    color:chartreuse;
+}
+
+/*cart page*/
+
+#cart_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#cart_items{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
